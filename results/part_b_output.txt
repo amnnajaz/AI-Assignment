@@ -1,0 +1,16 @@
+========================================================================
+PART B - Isolation 5x5 (queen moves), alpha-beta depth <= 4
+========================================================================
+
+Pruning at the start position (heuristic H1):
+  depth  minimax_nodes  alphabeta_nodes  cutoffs
+      1             12               12        0
+      2            125               59        8
+      3           1319              365       38
+      4          12871             1213      226
+
+H2-territory vs H1-mobility: {'games': 100, 'wins_a': 64, 'wins_b': 36, 'avg_plies': 19.7, 'avg_nodes_a': 2695.55, 'avg_nodes_b': 2668.28, 'avg_time_a': 0.12553986502000158, 'avg_time_b': 0.01313748362000112}
+H1-mobility vs random: (97, 100)
+H2-territory vs random: (99, 100)
+Showcase (H1 as P0, H2 as P1): winner = 1
+Showcase (H2 as P0, H1 as P1): winner = 0

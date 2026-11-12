@@ -1,0 +1,27 @@
+========================================================================
+PART A - CSP map colouring of Pakistan
+========================================================================
+
+Basic backtracking (first solution)
+  solution : {'AK': 'Red', 'BA': 'Red', 'GB': 'Green', 'ICT': 'Red', 'KP': 'Blue', 'PB': 'Green', 'SD': 'Blue'}
+  stats    : {'assignments': 7, 'backtracks': 0, 'recursive_calls': 8, 'constraint_checks': 33, 'pruned_values': 0, 'time_ms': 0.022}
+
+MRV+Degree+FC (first solution)
+  solution : {'KP': 'Red', 'PB': 'Green', 'AK': 'Blue', 'BA': 'Blue', 'GB': 'Green', 'ICT': 'Blue', 'SD': 'Red'}
+  stats    : {'assignments': 7, 'backtracks': 0, 'recursive_calls': 8, 'constraint_checks': 11, 'pruned_values': 11, 'time_ms': 0.054}
+
+Exhaustive search (all solutions)
+  Basic      solutions=6   {'assignments': 120, 'backtracks': 120, 'recursive_calls': 121, 'constraint_checks': 930, 'pruned_values': 0, 'time_ms': 0.188}
+  Heuristic  solutions=6   {'assignments': 39, 'backtracks': 39, 'recursive_calls': 40, 'constraint_checks': 51, 'pruned_values': 51, 'time_ms': 0.169}
+
+Average over 30240 (variable order x colour order) combos [assignments, backtracks, calls]
+  basic     : [13.23, 6.23, 14.23]
+  heuristic : [7.0, 0.0, 8.0]
+  worst-case basic backtracks: 50
+
+Ablation (all solutions)
+  none (basic order, no FC)    assignments=  120 backtracks=  120 calls=  121
+  FC only                      assignments=  102 backtracks=  102 calls=   67
+  MRV only                     assignments=  120 backtracks=  120 calls=  121
+  MRV + Degree                 assignments=   39 backtracks=   39 calls=   40
+  MRV + Degree + FC (full)     assignments=   39 backtracks=   39 calls=   40

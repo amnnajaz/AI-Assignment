@@ -1,0 +1,19 @@
+PART C - inference by enumeration
+(a) P(Cr)              = 0.1422   (unnormalised T=0.142200, F=0.857800; brute-force check 0.1422)
+(b) P(Al)              = 0.2186   (unnormalised T=0.218633, F=0.781367; brute-force check 0.2186)
+(c) P(Cr | Re)         = 0.2556   (unnormalised T=0.051120, F=0.148880; brute-force check 0.2556)
+(d) P(Es)              = 0.2148   (unnormalised T=0.214790, F=0.785210; brute-force check 0.2148)
+(e) P(At | Al, ~Co)    = 0.4881   (unnormalised T=0.048179, F=0.050528; brute-force check 0.4881)
+(f) P(Re | Cr, ~Al)    = 0.3805   (unnormalised T=0.004357, F=0.007093; brute-force check 0.3805)
+
+Intermediate quantities:
+  P(Bu) = 0.1
+  P(Ov) = 0.15000000000000002
+  P(Cr|Ov) = {True: 0.45500000000000007, False: 0.087}
+  P(Cr,At) = {True: 0.030780000000000005, False: 0.11142000000000002}
+  P(Cr,~At) = None
+  P(Cr) = 0.14220000000000002
+  P(~Cr,At) = {True: 0.06922, False: 0.7885800000000001}
+  P(Al,Co) = {(True, True): 0.11992597000000002, (True, False): 0.09870723, (False, True): 0.08672403, (False, False): 0.69464277}
+  P(Al) = 0.21863320000000003
+  P(Es) = 0.2147900492
