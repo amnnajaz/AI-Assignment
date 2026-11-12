@@ -23,7 +23,7 @@ import time
 N = 5
 DIRECTIONS = [(-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1)]
 WIN = 1000          # magnitude of a terminal (win/loss) score
-MAX_DEPTH = 4       # depth ceiling required by the assignment
+MAX_DEPTH = 4       # depth ceiling required by the assignmen
 
 
 def bit(cell):
