@@ -6,7 +6,7 @@ Contains
     * Task 1: plain depth-first backtracking search (alphabetical variable order)
     * Task 2: enhanced backtracking with MRV + Degree heuristic + Forward Checking
     * Task 3: counters (assignments, backtracks, recursive calls, constraint checks)
-      and a benchmark that compares the two solvers.
+      and a benchmark that compares the two solvers..
 
 Run:  python csp_solver.py
 """
