@@ -23,7 +23,7 @@ PARENTS = {
     "Co": ["Cr"],
     "Es": ["Al", "Co"],
 }
-# CPT[var][tuple of parent values] = P(var = True | parents)
+# CPT[var][tuple of parent values] = P(var = True|parents)
 CPT = {
     "Re": {(): 0.2},
     "At": {(): 0.1},
